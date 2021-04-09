@@ -1,6 +1,9 @@
 /* logo styling */
 .cat {
   position: relative;
+  height: 80px;
+  width: 60px;
+  margin-top: 50px;
 }
 
 .head {
@@ -48,13 +51,22 @@
   align-items: center;
 }
 
+/* header & footer */
 .footer, .header {
   width: 100%;
   height: 100px;
-  border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  border-top: 1px solid #eaeaea;
+}
+
+.header {
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
 }
 
 .footer img {
@@ -67,6 +79,17 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.header a {
+  margin: 1rem;
+}
+
+/* unused */
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -140,10 +163,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
 }
 
 @media (max-width: 600px) {
