@@ -8,7 +8,9 @@ export default function About() {
     <div className={styles.container}>
       <Header />
 
-      <main className={styles.main}>About</main>
+      <main className={styles.main}>
+        <h2 className={styles.title}>About</h2>
+      </main>
 
       <Footer />
     </div>
