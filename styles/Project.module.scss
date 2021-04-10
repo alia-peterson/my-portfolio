@@ -28,6 +28,10 @@
     line-height: 1.5;
   }
 
+  span {
+    text-decoration: underline;
+  }
+
   a:hover {
     color: $color-active;
     font-style: italic;

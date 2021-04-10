@@ -32,17 +32,34 @@
 }
 
 .section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
 
   h3 {
     text-decoration: underline;
   }
+}
 
-  article {
-    @include card-preset;
+.card {
+  @include card-preset;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: justify;
   }
 }
 

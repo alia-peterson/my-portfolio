@@ -3,6 +3,11 @@
 .tarot {
   @include card-preset;
   transition: 1s all;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
 .tarot:hover {

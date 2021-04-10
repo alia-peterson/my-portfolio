@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import info from '../data/information'
-import body from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,16 +9,22 @@ import Footer from '../components/Footer'
 export default function Home() {
   const types = Object.keys(info.proficient)
 
+  const currents = info.current.map((each, i) => {
+    return (
+      <li key={i}>{each}</li>
+    )
+  })
+
   const profs = types.map((type, i) => {
     return (
-      <p key={i}>
-        <span className={body.span}>{type}</span>: {info.proficient[type]}
-      </p>
+      <li key={i}>
+        <span className={styles.span}>{type}</span>: {info.proficient[type]}
+      </li>
     )
   })
 
   return (
-    <div className={body.container}>
+    <div className={styles.container}>
       <Head>
         <title>Alia Peterson Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,18 +32,19 @@ export default function Home() {
       </Head>
 
       <Header />
-      <main className={body.main}>
-        <h2 className={body.title}>About Me</h2>
-        <section className={body.section}>
-          <article>
+      <main className={styles.main}>
+        <h2 className={styles.title}>About Me</h2>
+        <section className={styles.section}>
+          <article className={styles.card}>
             <h3>Summary:</h3>
-            <p>{info.summary}</p>
+            <p>{info.summary[0]}</p>
+            <p>{info.summary[1]}</p>
           </article>
-          <article>
+          <article className={styles.card}>
             <h3>Currently Learning:</h3>
-            <p>{info.current}</p>
+            <ul>{currents}</ul>
             <h3>Proficient In:</h3>
-            <div>{profs}</div>
+            <ul>{profs}</ul>
           </article>
         </section>
       </main>
