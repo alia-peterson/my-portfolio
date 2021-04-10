@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-// import hat from '../assets/hat.png'
+
 import styles from '../styles/Header.module.scss'
 
 export default function Header() {

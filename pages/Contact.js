@@ -1,6 +1,7 @@
+import Image from 'next/image'
+
 import body from '../styles/Home.module.scss'
 import styles from '../styles/Contact.module.scss'
-import Image from 'next/image'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -28,7 +29,7 @@ export default function Contact() {
             </article>
           </a>
 
-          <a href='mailto:alia@pnwebs.com' target='_blank'>
+          <a href='mailto:alia.codes@pnwebs.com' target='_blank'>
             <article className={styles.tarot}>
               <Image src='/images/moon.png' height={200} width={200} />
               <p>Email</p>

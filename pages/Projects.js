@@ -1,4 +1,5 @@
 import projects from '../data/projects'
+
 import body from '../styles/Home.module.scss'
 import styles from '../styles/Project.module.scss'
 

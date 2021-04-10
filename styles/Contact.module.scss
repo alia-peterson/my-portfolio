@@ -1,17 +1,8 @@
 @import 'variables';
 
 .tarot {
-  margin: 1rem;
-  padding: 1.5rem;
-  background-color: $color-background;
-  border: 1px solid $color-detail;
-  border-radius: 10px;
-  min-height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include card-preset;
   transition: 1s all;
-  align-items: center;
 }
 
 .tarot:hover {

@@ -10,8 +10,8 @@ export default function Card({ title, type, timeframe, description, technologies
       <p>Timeframe: {timeframe}</p>
       <p>Description: {description}</p>
       <p>Technologies Used: {techs}</p>
-      <p><a href={deployed}>Live Website ☞</a></p>
-      <p><a href={repository}>Repository ☞</a></p>
+      {deployed && <p><a href={deployed}>Live Website ☞</a></p>}
+      {repository && <p><a href={repository}>Repository ☞</a></p>}
     </article>
   )
 }
