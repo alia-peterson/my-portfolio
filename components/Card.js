@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Card({ title, type, timeframe, description, technologies, deployed, repository }) {
   const techs = technologies.join(', ')

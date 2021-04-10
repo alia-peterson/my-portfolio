@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -15,7 +15,8 @@ export default function Home() {
 
       <Header />
       <main className={styles.main}>
-        <h2 className={styles.intro}>Welcome to my website!</h2>
+        <h2 className={styles.title}>About Me</h2>
+        <p></p>
       </main>
       <Footer />
 

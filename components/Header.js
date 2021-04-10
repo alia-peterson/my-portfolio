@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 // import hat from '../assets/hat.png'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Header.module.scss'
 
 export default function Header() {
   return (
@@ -18,10 +18,6 @@ export default function Header() {
 
         <Link href='/Projects'>
           <a>Projects</a>
-        </Link>
-
-        <Link href='/About'>
-          <a>About</a>
         </Link>
 
         <Link href='/Contact'>
