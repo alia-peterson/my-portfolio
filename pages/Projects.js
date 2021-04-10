@@ -1,5 +1,6 @@
 import projects from '../data/projects'
-import styles from '../styles/Home.module.scss'
+import body from '../styles/Home.module.scss'
+import styles from '../styles/Project.module.scss'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -22,11 +23,11 @@ export default function Projects() {
   })
 
   return (
-    <div className={styles.container}>
+    <div className={body.container}>
       <Header />
 
-      <main className={styles.main}>
-        <h2 className={styles.title}>Projects</h2>
+      <main className={body.main}>
+        <h2 className={body.title}>Projects</h2>
         <section className={styles.grid}>
           {projectCards}
         </section>
