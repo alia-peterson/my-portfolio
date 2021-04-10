@@ -1,0 +1,32 @@
+.cat {
+  position: relative;
+  height: 80px;
+  width: 60px;
+  margin-top: 50px;
+}
+
+.head {
+  height: 50px;
+  width: 50px;
+  background-color: #22AE9B;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.leftEar, .rightEar {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  top: -19px;
+}
+
+.leftEar {
+  border-left: 26px solid #278074;
+}
+
+.rightEar {
+  border-right: 26px solid #259788;
+  left: 24px;
+}

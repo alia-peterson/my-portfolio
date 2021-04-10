@@ -1,39 +1,49 @@
 const projects = [
   {
-    title: 'Trivia Night',
+    title: 'Personal Website',
     type: 'Solo',
-    timeframe: '2 Weeks',
+    timeframe: 'Ongoing',
     description: '',
-    technologies: ['React', 'HTML', 'CSS', 'Javascript'],
+    technologies: ['React.js', 'Next.js', 'HTML', 'SCSS', 'Javascript'],
     deployed: '',
     repository: ''
+  },
+  {
+    title: 'Flashcards',
+    type: 'Solo',
+    timeframe: '1 Day',
+    description: '',
+    technologies: ['React.js', 'HTML', 'CSS', 'Javascript'],
+    deployed: 'https://interview-prep-turing.vercel.app/',
+    repository: 'https://github.com/alia-peterson/interview-prep'
+  },
+  {
+    title: 'Trivia Night',
+    type: 'Solo',
+    timeframe: '6 Days',
+    description: '',
+    technologies: ['React.js', 'HTML', 'CSS', 'Javascript'],
+    deployed: 'https://triviology.herokuapp.com/',
+    repository: 'https://github.com/alia-peterson/trivia-night'
   },
   {
     title: 'ActivAir',
-    type: 'Solo',
-    timeframe: '2 Weeks',
+    type: 'Group',
+    timeframe: '9 Days',
     description: '',
-    technologies: ['HTML', 'CSS'],
-    deployed: '',
-    repository: ''
+    technologies: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
+    deployed: 'https://activ-air-alia-peterson.vercel.app/',
+    repository: 'https://github.com/alia-peterson/ActivAir'
   },
   {
-    title: 'Trivia Night',
-    type: 'Solo',
+    title: 'Rancid Tomatillos',
+    type: 'Pair',
     timeframe: '2 Weeks',
     description: '',
-    technologies: ['HTML', 'CSS'],
-    deployed: '',
-    repository: ''
-  },
-  {
-    title: 'Travel Tracker',
-    type: 'Solo',
-    timeframe: '2 Weeks',
-    description: '',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    repository: ''
-  },
+    technologies: ['React.js', 'HTML', 'CSS', 'Javascript'],
+    deployed: 'https://rancid-tomatillos-khap.herokuapp.com/',
+    repository: 'https://github.com/alia-peterson/rancid-tomatillos'
+  }
 ]
 
 export default projects

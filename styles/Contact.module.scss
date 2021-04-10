@@ -1,0 +1,32 @@
+@import 'variables';
+
+.tarot {
+  @include card-preset;
+  transition: 1s all;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+
+.tarot:hover {
+  color: $color-active ;
+  border-color: $color-active;
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
+
+  p {
+    color: $color-active;
+    font-style: italic;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}

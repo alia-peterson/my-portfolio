@@ -1,0 +1,39 @@
+@import 'variables';
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card {
+  @include card-preset;
+  flex-basis: 45%;
+  width: 80%;
+  text-align: left;
+  align-items: flex-start;
+  min-height: 0;
+
+  h3 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $color-active;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,16 @@
+$color-background: #2A3736;
+$color-detail: #1DDCC2;
+$color-active: #22AE9B;
+
+@mixin card-preset {
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: $color-background;
+  border: 1px solid $color-detail;
+  border-radius: 10px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
