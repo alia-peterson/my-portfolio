@@ -8,13 +8,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Alia Peterson Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet" />
       </Head>
 
       <Header />
       <main className={styles.main}>
-        <h2 className={styles.intro}>Welcome!</h2>
+        <h2 className={styles.intro}>Welcome to my website!</h2>
       </main>
       <Footer />
 
