@@ -10,7 +10,7 @@ const info = {
     Tools: 'API Consumption, Github Projects, Version Control, Chart.js',
     Testing: 'Cypress, Jest, Mocha, Chai',
     Deployment: 'Heroku, Vercel',
-    CICD: 'TravisCI'
+    'CI/CD': 'TravisCI'
   }
 }
 

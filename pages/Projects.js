@@ -29,7 +29,7 @@ export default function Projects() {
 
       <main className={body.main}>
         <h2 className={body.title}>Projects</h2>
-        <section className={styles.grid}>
+        <section className={styles.container}>
           {projectCards}
         </section>
       </main>
