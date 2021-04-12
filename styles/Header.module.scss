@@ -49,6 +49,11 @@
     justify-content: center;
   }
 
+  a:hover {
+    font-style: italic;
+    color: $color-active;
+  }
+
   img {
     margin-left: 0.5rem;
   }

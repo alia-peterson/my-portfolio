@@ -18,11 +18,7 @@ export default function Card({ title, type, timeframe, description, technologies
             <p><span>Timeframe:</span> {timeframe}</p>
             <p><span>Technologies Used:</span> {techs}</p>
           </div>
-
-          <Image src='/images/eye.png' height={140} width={140}/>
         </div>
-
-        <p><span>Description:</span> {description}</p>
 
       </div>
     </article>
