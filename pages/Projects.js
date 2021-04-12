@@ -22,11 +22,8 @@ export default function Projects() {
   })
 
   return (
-    <main className={body.main}>
-      <h2 className={body.title}>Projects</h2>
-      <section className={styles.container}>
-        {projectCards}
-      </section>
-    </main>
+    <section className={styles.container}>
+      {projectCards}
+    </section>
   )
 }

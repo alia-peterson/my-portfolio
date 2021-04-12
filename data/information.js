@@ -1,7 +1,7 @@
 const info = {
   summary: [
-    'I am someone who enjoys the process of problem solving and feels rewarded every time I work through a problem, whether difficult or simple. I have 2 years of Civil Engineering experience, so the process of finding a solution that works for everyone is something I\'m familiar with, along with working in a team to find a solution and produce an effective product.',
-    'I decided to pursue web development because I believe the industry will give me more opportunities to be a positive influence and because I believe it will lead to a high fulfillment career that allows me to pursue personal goals as well as professional ones.'
+    'I enjoy the process of problem solving and feel rewarded every time I work through a problem, whether difficult or simple. I\'m interested in design, traveling, great food, and great conversations. I hope to be inspired and to work hard to better myself and those around me.',
+    'I decided to pursue web development because I believe the industry will give me more opportunities to be a positive influence and because I believe it will lead to a high fulfillment career that allows me to pursue professional goals as well as personal ones.'
   ],
   current: ['Next.js', 'CircleCI'],
   proficient: {

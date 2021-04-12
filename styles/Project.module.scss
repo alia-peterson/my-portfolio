@@ -10,8 +10,10 @@
 
 .card {
   @include card-preset;
-  height: 390px;
-  width: 250px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 0;
+  width: 40%;
 
   h3 {
     margin: 0 0 1rem 0;
@@ -35,24 +37,16 @@
   }
 }
 
-.button {
-  cursor: pointer;
-  padding-top: 1rem;
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.button:hover {
-  color: $color-active;
-  font-style: italic;
-}
-
-.links {
-  margin-bottom: 1rem;
-}
-
-.showFront div .back {
-  display: none !important;
-}
-
-.showBack div .front {
-  display: none !important;
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  width: 100%;
 }

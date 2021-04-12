@@ -9,7 +9,6 @@ import Footer from '../components/Footer'
 export default function Contact() {
   return (
     <main className={body.main}>
-      <h2 className={body.title}>Contact</h2>
 
       <div className={styles.container}>
         <a href='https://github.com/alia-peterson' target='_blank'>

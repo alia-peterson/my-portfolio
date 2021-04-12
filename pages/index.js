@@ -22,7 +22,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h2 className={styles.title}>About Me</h2>
       <section className={styles.section}>
         <article className={styles.card}>
           <h3>Summary:</h3>
