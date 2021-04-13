@@ -6,12 +6,9 @@ import styles from '../styles/Header.module.scss'
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Image src='/images/bat.png' height={40} width={40}/>
-        <h1>Alia Peterson</h1>
-      </div>
-
-      <div>
+      <h1>Alia Peterson Portfolio</h1>
+    
+      <div className={styles.menu}>
         <Link href='/'>
           <a>Home</a>
         </Link>

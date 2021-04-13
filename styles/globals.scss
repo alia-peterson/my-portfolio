@@ -1,3 +1,4 @@
+@import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
 html,
@@ -5,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Philosopher', sans-serif;
-  background-color: #2A3736;
+  background-color: $color-background;
   background-image: url('../assets/stars and hearts.png');
   background-position: center;
   background-repeat: repeat;

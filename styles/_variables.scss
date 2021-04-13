@@ -1,4 +1,4 @@
-$color-background: #2A3736;
+$color-background: black;
 $color-detail: #1DDCC2;
 $color-active: #22AE9B;
 
@@ -13,4 +13,14 @@ $color-active: #22AE9B;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin light-mode {
+  background-color: black;
+  color: $color-detail;
+}
+
+@mixin dark-mode {
+  background-color: black;
+  color: $color-detail;
 }
