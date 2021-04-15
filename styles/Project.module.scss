@@ -15,10 +15,8 @@
   min-height: 0;
   width: 80%;
 
-  h3 {
-    margin: 0 0 1rem 0;
-    font-size: 2rem;
-    text-transform: uppercase;
+  h2 {
+    @include h2;
   }
 
   p {
@@ -49,4 +47,8 @@
   justify-content: space-between;
   padding-right: 2rem;
   width: 100%;
+}
+
+.link {
+  margin-bottom: 1rem;
 }

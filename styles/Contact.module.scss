@@ -2,7 +2,12 @@
 
 .tarot {
   @include card-preset;
+  border: 2px solid $color-detail;
+  justify-content: space-between;
+  outline: double $color-detail;
+  outline-offset: -15px;
   transition: 1s all;
+  width: 260px;
 
   p {
     font-size: 1.25rem;

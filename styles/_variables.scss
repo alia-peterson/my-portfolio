@@ -24,3 +24,9 @@ $color-active: #22AE9B;
   background-color: black;
   color: $color-detail;
 }
+
+@mixin h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
