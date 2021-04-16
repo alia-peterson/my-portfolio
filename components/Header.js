@@ -1,13 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+import ThemeButton from '../components/ThemeButton'
+
 import styles from '../styles/Header.module.scss'
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <h1>Alia Peterson Portfolio</h1>
-    
+      <ThemeButton />
+
       <div className={styles.menu}>
         <Link href='/'>
           <a>Home</a>

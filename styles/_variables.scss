@@ -22,11 +22,6 @@ $color-detail-light: #540b0e;
   color: $color-detail-light;
 }
 
-@mixin dark-mode {
-  background-color: $color-background;
-  color: $color-detail;
-}
-
 @mixin h2 {
   margin: 1rem 0;
   font-size: 2rem;

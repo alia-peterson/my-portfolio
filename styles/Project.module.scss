@@ -1,5 +1,12 @@
 @import 'variables';
 
+.light {
+  .card {
+    @include light-mode;
+    border-color: $color-detail-light;
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
