@@ -3,6 +3,7 @@ $color-detail: #1DDCC2;
 $color-active: #22AE9B;
 $color-background-light: #e09f3e;
 $color-detail-light: #540b0e;
+$color-active-light: black;
 
 @mixin card-preset {
   margin: 1rem;
@@ -18,8 +19,9 @@ $color-detail-light: #540b0e;
 }
 
 @mixin light-mode {
-  background-color: $color-background-light;
-  color: $color-detail-light;
+  background-color: $color-background-light !important;
+  color: $color-detail-light !important;
+  outline-color: $color-detail-light !important;
 }
 
 @mixin h2 {

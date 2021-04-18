@@ -1,6 +1,15 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
+.light {
+  @include light-mode;
+  border-color: $color-detail-light !important;
+
+  a:hover {
+    color: $color-active-light !important;
+  }
+}
+
 html,
 body {
   padding: 0;

@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react'
 const ThemeContext = createContext()
 
 export function AppWrapper({ children }) {
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
   const value = { active, setActive }
 
   return (

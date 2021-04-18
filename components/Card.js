@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import styles from '../styles/Project.module.scss'
+import { useThemeContext } from '../context/theme-context'
 
 export default function Card({ title, type, timeframe, description, technologies, deployed, repository, image }) {
   const techs = technologies.join(', ')
+  const { active } = useThemeContext()
 
   return (
-    <article className={styles.card}>
+    <article className={`${styles.card} ${active ? 'light' : ''}`}>
 
       <h2>{title}</h2>
       <div className={styles.body}>

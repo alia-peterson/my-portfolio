@@ -1,12 +1,5 @@
 @import 'variables';
 
-.light {
-  .header, .footer {
-    @include light-mode;
-    border-color: $color-detail-light;
-  }
-}
-
 .header, .footer {
   align-items: center;
   background-color: $color-background;

@@ -1,12 +1,5 @@
 @import 'variables';
 
-.light {
-  .card {
-    @include light-mode;
-    border-color: $color-detail-light;
-  }
-}
-
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;

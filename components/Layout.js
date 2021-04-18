@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useThemeContext } from '../context/theme-context'
 import styles from '../styles/Home.module.scss'
 
 
@@ -7,8 +6,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const Layout = ({ children }) => {
-  const { active } = useThemeContext()
-
   return (
     <>
       <Head>
@@ -17,7 +14,7 @@ const Layout = ({ children }) => {
         <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet" />
       </Head>
 
-      <div className={`${styles.container} ${active ? 'light' : ''}`}>
+      <div className={styles.container}>
         <Header />
 
         {children}
