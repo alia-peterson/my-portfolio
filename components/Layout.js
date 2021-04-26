@@ -18,8 +18,6 @@ const Layout = ({ children }) => {
         <Header />
 
         {children}
-
-        <Footer />
       </div>
     </>
   )
