@@ -1,4 +1,5 @@
 import { useThemeContext } from '../context/theme-context'
+import Image from 'next/image'
 
 export default function ThemeButton() {
   const { active, setActive } = useThemeContext()
@@ -17,7 +18,7 @@ export default function ThemeButton() {
 
   return (
     <button onClick={handleClick}>
-      hi
+      <Image src='/images/skull.png' alt='toggle theme' height={30} width={30} />
     </button>
   )
 }

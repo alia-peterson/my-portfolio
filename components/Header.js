@@ -11,10 +11,12 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${active ? 'light' : ''}`}>
+      <div>
+        <ThemeButton />
+      </div>
       <h1>Alia Peterson Portfolio</h1>
-      <ThemeButton />
 
-      <div className={`${styles.menu} ${active ? 'light' : ''}`}>
+      <section className={`${styles.menu} ${active ? 'light' : ''}`}>
         <Link href='/'>
           <a>Home</a>
         </Link>
@@ -26,7 +28,7 @@ export default function Header() {
         <Link href='/Contact'>
           <a>Contact</a>
         </Link>
-      </div>
+      </section>
     </header>
   )
 }
