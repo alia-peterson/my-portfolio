@@ -19,6 +19,10 @@
     @include h2;
   }
 
+  img {
+    padding-bottom: 1rem !important;
+  }
+
   p {
     margin: 0;
     font-size: 1.25rem;
@@ -37,15 +41,7 @@
 
 .body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.text {
-  display: flex;
   justify-content: space-between;
-  padding-right: 2rem;
   width: 100%;
 }
 
