@@ -17,6 +17,7 @@ export default function Projects() {
         technologies={project.technologies}
         deployed={project.deployed}
         repository={project.repository}
+        image={project.image}
       />
     )
   })

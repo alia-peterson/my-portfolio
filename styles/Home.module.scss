@@ -20,24 +20,13 @@
   width: 100%;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
-  text-align: left;
-  text-transform: uppercase;
-  background-color: $color-background;
-  /* width: 80%; */
-  text-align: left;
-}
-
 .section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
 
-  h3 {
-    text-decoration: underline;
+  h2 {
+    @include h2;
   }
 }
 
@@ -66,25 +55,3 @@
 .span {
   text-decoration: underline;
 }
-
-// .intro {
-//   animation-delay: 0.5s;
-//   font-size: 2em;
-//   letter-spacing: 4px;
-//   overflow: hidden;
-//   background: linear-gradient(90deg, $color-background, $color-detail, $color-background);
-//   background-repeat: no-repeat;
-//   background-size: 80%;
-//   animation: animate 6s linear infinite;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-// }
-//
-// @keyframes animate {
-//   0% {
-//     background-position: -500%;
-//   }
-//   100% {
-//     background-position: 500%;
-//   }
-// }

@@ -15,10 +15,12 @@
   min-height: 0;
   width: 80%;
 
-  h3 {
-    margin: 0 0 1rem 0;
-    font-size: 2rem;
-    text-transform: uppercase;
+  h2 {
+    @include h2;
+  }
+
+  img {
+    padding-bottom: 1rem !important;
   }
 
   p {
@@ -39,14 +41,10 @@
 
 .body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
-.text {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 2rem;
-  width: 100%;
+.link {
+  margin-bottom: 1rem;
 }

@@ -1,13 +1,17 @@
 $color-background: black;
 $color-detail: #1DDCC2;
 $color-active: #22AE9B;
+$color-background-light: #e09f3e;
+$color-detail-light: #7F0414;
+$color-active-light: black;
 
 @mixin card-preset {
   margin: 1rem;
   padding: 1.5rem;
   background-color: $color-background;
-  border: 1px solid $color-detail;
+  border: 2px solid $color-detail;
   border-radius: 10px;
+  box-shadow: 4px 4px 14px $color-active-light;
   min-height: 360px;
   display: flex;
   flex-direction: column;
@@ -16,11 +20,14 @@ $color-active: #22AE9B;
 }
 
 @mixin light-mode {
-  background-color: black;
-  color: $color-detail;
+  background-color: $color-background-light !important;
+  border-color: $color-detail-light !important;
+  color: $color-detail-light !important;
+  outline-color: $color-detail-light !important;
 }
 
-@mixin dark-mode {
-  background-color: black;
-  color: $color-detail;
+@mixin h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
