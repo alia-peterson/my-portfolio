@@ -3,11 +3,23 @@
 
 .light {
   @include light-mode;
-  border-color: $color-detail-light !important;
+  // backdrop-filter: invert(1) brightness(0.5);
 
   a:hover {
     color: $color-active-light !important;
   }
+
+  img {
+    filter: invert(1) brightness(0.5);
+  }
+}
+
+body.light::after {
+  filter: invert(1) brightness(0.5);
+}
+
+body.light::before {
+  background-color: $color-background-light;
 }
 
 html,
@@ -15,13 +27,30 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Philosopher', sans-serif;
+  color: $color-detail;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
   background-color: $color-background;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
   background-image: url('../assets/stars and hearts.png');
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
   background-attachment: fixed;
-  color: $color-detail;
+  z-index: -1;
 }
 
 a {
