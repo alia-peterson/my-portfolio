@@ -10,13 +10,13 @@ export default function Header() {
   const { active } = useThemeContext()
 
   return (
-    <header className={`${styles.header} ${active ? 'light' : ''}`}>
+    <header className={`${styles.header} ${active ? 'dark' : ''}`}>
       <div>
         <ThemeButton />
       </div>
       <h1>Alia Peterson Portfolio</h1>
 
-      <section className={`${styles.menu} ${active ? 'light' : ''}`}>
+      <section className={`${styles.menu} ${active ? 'dark' : ''}`}>
         <Link href='/'>
           <a>Home</a>
         </Link>

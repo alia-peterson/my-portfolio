@@ -1,9 +1,9 @@
-$color-background: black;
-$color-detail: #1DDCC2;
-$color-active: #22AE9B;
-$color-background-light: #f7c67d;
-$color-detail-light: #7F0414;
-$color-active-light: black;
+$color-background: #f7c67d;
+$color-detail: #7F0414;
+$color-active: black;
+$color-background-dark: black;
+$color-detail-dark: #1DDCC2;
+$color-active-dark: #22AE9B;
 
 @mixin card-preset {
   margin: 1rem;
@@ -11,7 +11,7 @@ $color-active-light: black;
   background-color: $color-background;
   border: 2px solid $color-detail;
   border-radius: 10px;
-  box-shadow: 4px 4px 14px $color-active-light;
+  box-shadow: 4px 4px 14px $color-active;
   min-height: 360px;
   display: flex;
   flex-direction: column;
@@ -19,11 +19,11 @@ $color-active-light: black;
   align-items: center;
 }
 
-@mixin light-mode {
-  background-color: $color-background-light !important;
-  border-color: $color-detail-light !important;
-  color: $color-detail-light !important;
-  outline-color: $color-detail-light !important;
+@mixin dark-mode {
+  background-color: $color-background-dark !important;
+  border-color: $color-detail-dark !important;
+  color: $color-detail-dark !important;
+  outline-color: $color-detail-dark !important;
 }
 
 @mixin h2 {

@@ -7,7 +7,7 @@ export default function Card({ title, type, timeframe, description, technologies
   const { active } = useThemeContext()
 
   return (
-    <article className={`${styles.card} ${active ? 'light' : ''}`}>
+    <article className={`${styles.card} ${active ? 'dark' : ''}`}>
 
       <h2>{title}</h2>
       <div className={styles.body}>

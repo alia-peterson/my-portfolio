@@ -1,31 +1,31 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
-.light {
-  @include light-mode;
+.dark {
+  @include dark-mode;
 
   a:hover, a:hover p {
-    color: $color-active-light !important;
+    color: $color-active-dark !important;
   }
 
   button {
-    color: $color-detail-light !important;
+    color: $color-detail-dark !important;
     animation: rotation 1s linear;
     transform: rotate(180deg);
     transition-duration: 1s;
   }
 
   img {
-    filter: invert(1) brightness(0.5);
+    filter: none;
   }
 }
 
-body.light::after {
-  filter: invert(1) brightness(0.5);
+body.dark::after {
+  filter: none;
 }
 
-body.light::before {
-  background-color: $color-background-light;
+body.dark::before {
+  background-color: $color-background-dark;
 }
 
 html,
@@ -51,12 +51,17 @@ body::after {
   position: absolute;
   top: 0; left: 0;
   height: 100%; width: 100%;
+  filter: invert(1) brightness(0.5);
   background-image: url('../assets/stars and hearts.png');
   background-position: center;
   background-repeat: repeat;
   background-size: 30rem;
   background-attachment: fixed;
   z-index: -1;
+}
+
+img {
+  filter: invert(1) brightness(0.5);
 }
 
 a {

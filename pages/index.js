@@ -26,13 +26,13 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.section}>
 
-        <article className={`${styles.card} ${active ? 'light' : ''}`}>
+        <article className={`${styles.card} ${active ? 'dark' : ''}`}>
           <h2>Summary:</h2>
           <p>{info.summary[0]}</p>
           <p>{info.summary[1]}</p>
         </article>
 
-        <article className={`${styles.card} ${active ? 'light' : ''}`}>
+        <article className={`${styles.card} ${active ? 'dark' : ''}`}>
           <h2>Currently Learning:</h2>
           <ul>{currents}</ul>
           <h2>Proficient In:</h2>
