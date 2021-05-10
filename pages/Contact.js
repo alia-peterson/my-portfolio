@@ -29,11 +29,11 @@ export default function Contact() {
           />
 
         <Tarot
-          link='mailto:alia@alia.codes'
+          link='/Alia Peterson Resume 2021.pdf'
           img='moon'
           height={150}
           width={150}
-          name='Email'
+          name='Resume'
           />
 
       </div>
