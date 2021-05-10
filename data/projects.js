@@ -5,40 +5,12 @@ const projects = [
     timeframe: '2 Weeks',
     description: 'A course planning tool to help instructors and subject matter experts plan activities for modules for a given course.',
     technologies: ['React.js', 'Next.js', 'HTML', 'CSS', 'Javascript'],
-    deployed: '',
-    repository: 'https://github.com/CourseChart/course-chart-fe',
+    deployed: 'https://course-chart-ap.vercel.app/',
+    repository: 'https://github.com/alia-peterson/course-chart-ap',
     image: {
       src: '/images/gems.png',
       height: 100,
       width: 180
-    }
-  },
-  {
-    title: 'Personal Website',
-    type: 'Solo',
-    timeframe: 'Ongoing',
-    description: 'My personal website! Showcases my latest projects and will likely be the place that I will test new technologies.',
-    technologies: ['React.js', 'Next.js', 'HTML', 'SCSS', 'Javascript'],
-    deployed: '',
-    repository: '',
-    image: {
-      src: '/images/crystal ball.png',
-      height: 120,
-      width: 150
-    }
-  },
-  {
-    title: 'Flashcards',
-    type: 'Solo',
-    timeframe: '1 Day',
-    description: 'A flashcards application to help classmates and myself practice for technical interview questions.',
-    technologies: ['React.js', 'HTML', 'CSS', 'Javascript'],
-    deployed: 'https://interview-prep-turing.vercel.app/',
-    repository: 'https://github.com/alia-peterson/interview-prep',
-    image: {
-      src: '/images/cards.png',
-      height: 100,
-      width: 220
     }
   },
   {
