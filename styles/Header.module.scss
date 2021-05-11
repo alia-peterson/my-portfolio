@@ -1,6 +1,6 @@
 @import 'variables';
 
-.header, .footer {
+.header {
   align-items: center;
   background-color: $color-background;
   min-height: 100px;
@@ -8,9 +8,6 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-}
-
-.header {
   border-bottom: 2px solid $color-detail;
   box-shadow: 0px 2px 14px $color-detail;
   justify-content: space-between;
