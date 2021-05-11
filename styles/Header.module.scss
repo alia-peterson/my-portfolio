@@ -12,7 +12,7 @@
 
 .header {
   border-bottom: 2px solid $color-detail;
-  box-shadow: 0px 2px 14px $color-active;
+  box-shadow: 0px 2px 14px $color-detail;
   justify-content: space-between;
 
   button {
@@ -30,9 +30,15 @@
   }
 
   a {
+    color: $color-detail;
     margin: 1rem;
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color-active;
   }
 
   h1 {
@@ -59,28 +65,6 @@
   padding: 1rem;
   text-align: center;
   width: 100%;
-}
-
-.footer {
-  border-top: 2px solid $color-detail;
-  box-shadow: 0px -2px 14px $color-active;
-  font-weight: bold;
-
-  a {
-    align-items: center;
-    display: flex;
-    font-size: 18px;
-    justify-content: center;
-  }
-
-  a:hover {
-    font-style: italic;
-    color: $color-active;
-  }
-
-  img {
-    margin-left: 0.5rem;
-  }
 }
 
 .logo {

@@ -1,6 +1,6 @@
-$color-background: #f7c67d;
-$color-detail: #7F0414;
-$color-active: black;
+$color-background: white;
+$color-detail: black;
+$color-active: #7F0414;
 $color-background-dark: black;
 $color-detail-dark: #1DDCC2;
 $color-active-dark: #22AE9B;
@@ -11,7 +11,7 @@ $color-active-dark: #22AE9B;
   background-color: $color-background;
   border: 2px solid $color-detail;
   border-radius: 10px;
-  box-shadow: 4px 4px 14px $color-active;
+  box-shadow: 4px 4px 14px $color-detail;
   min-height: 360px;
   display: flex;
   flex-direction: column;
