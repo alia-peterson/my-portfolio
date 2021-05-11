@@ -1,5 +1,4 @@
-import Head from 'next/head'
-
+import Image from 'next/image'
 import { useThemeContext } from '../context/theme-context'
 import info from '../data/information'
 import styles from '../styles/Home.module.scss'
@@ -33,6 +32,10 @@ export default function Home() {
         </article>
 
         <article className={`${styles.card} ${active ? 'dark' : ''}`}>
+          <div>
+            <Image src={'/images/leaves.png'} height={100} width={120} />
+          </div>
+
           <h2>Currently Learning:</h2>
           <ul>{currents}</ul>
           <h2>Proficient In:</h2>

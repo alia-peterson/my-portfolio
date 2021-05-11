@@ -1,10 +1,6 @@
-import Image from 'next/image'
-
 import body from '../styles/Home.module.scss'
 import styles from '../styles/Contact.module.scss'
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Tarot from '../components/Tarot'
 
 export default function Contact() {

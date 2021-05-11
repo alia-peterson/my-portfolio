@@ -23,8 +23,10 @@ export default function Projects() {
   })
 
   return (
-    <section className={styles.container}>
-      {projectCards}
-    </section>
+    <main className={body.main}>
+      <section className={styles.container}>
+        {projectCards}
+      </section>
+    </main>
   )
 }
