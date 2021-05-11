@@ -3,8 +3,16 @@ import styles from '../styles/Project.module.scss'
 import { useThemeContext } from '../context/theme-context'
 
 export default function Card({ title, type, timeframe, description, technologies, deployed, repository, image }) {
-  const techs = technologies.join(', ')
   const { active } = useThemeContext()
+
+  const techs = technologies.map((tech, i) => {
+    return (
+      <div key={i} className={`${styles.icon} ${active ? 'dark' : ''}`}>
+        <Image src={`/icons/${tech.toLowerCase()}-icon.png`} alt={`${tech} icon`} height={50} width={50} />
+        <div className={styles.tooltip}><p>{tech}</p></div>
+      </div>
+    )
+  })
 
   return (
     <article className={`${styles.card} ${active ? 'dark' : ''} col-md-3`}>
@@ -13,20 +21,23 @@ export default function Card({ title, type, timeframe, description, technologies
 
       <div className={styles.header}>
         {type === 'Group' ? 
-          <div className={styles.icon}>
-            <Image src={'/icons/group-icon.png'} alt={type} height={50} width={50} /> 
-            <div className={styles.tooltip}>{type}</div>
+          <div className={`${styles.icon} ${active ? 'dark' : ''}`}>
+            <Image src={'/icons/group-icon.png'} alt={`team type - ${type}`} height={50} width={50} />
+            <div className={styles.tooltip}><p>{type}</p></div>
           </div> :
-          <div className={styles.icon}>
-            <Image src={'/icons/solo-icon.png'} alt={type} height={50} width={35} />
-            <div className={styles.tooltip}>{type}</div>
+          <div className={`${styles.icon} ${active ? 'dark' : ''}`}>
+            <Image src={'/icons/solo-icon.png'} alt={`team type - ${type}`} height={50} width={35} />
+            <div className={styles.tooltip}><p>{type}</p></div>
           </div>
         }
 
-        <Image src={'/icons/clock-icon.png'} height={50} width={50} />
-        <Image src={'/icons/react-icon.png'} height={50} width={50} />
-        {/* <p><span>Timeframe:</span> {timeframe}</p> */}
-        {/* <p><span>Technologies Used:</span> {techs}</p> */}
+        <div className={`${styles.icon} ${active ? 'dark' : ''}`}>
+          <Image src={'/icons/clock-icon.png'} alt={`timeframe icon - ${timeframe}`} height={50} width={50} />
+          <div className={styles.tooltip}><p>{timeframe}</p></div>
+        </div>
+
+        {techs}
+
       </div>
 
       <div className={styles.body}>
@@ -38,7 +49,7 @@ export default function Card({ title, type, timeframe, description, technologies
 
         </div>
 
-        {/* <Image src={image.src} height={image.height} width={image.width} /> */}
+        <Image src={image.src} height={image.height} width={image.width} />
 
       </div>
       
