@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 import { useThemeContext } from '../context/theme-context'
 import ThemeButton from '../components/ThemeButton'

@@ -63,3 +63,20 @@
 .span {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding-top: 0;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .card div {
+    top: 10%;
+    height: 80px;
+    width: 100px;
+  }
+}

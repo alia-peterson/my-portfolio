@@ -69,3 +69,13 @@
   padding-left: 1rem;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    text-align: center;
+
+    div {
+      justify-content: center;
+    }
+  }
+}
