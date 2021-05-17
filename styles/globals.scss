@@ -29,7 +29,7 @@ div.dark img {
 }
 
 body.dark::after {
-  filter: none;
+  filter: saturate(0);
 }
 
 body.dark::before {
@@ -59,7 +59,7 @@ body::after {
   position: absolute;
   top: 0; left: 0;
   height: 100%; width: 100%;
-  filter: invert(1) brightness(0.5);
+  filter: invert(1) brightness(0.5) saturate(0);
   background-image: url('../assets/plants_background.jpg');
   background-position: center;
   background-repeat: no-repeat;
