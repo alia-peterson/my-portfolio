@@ -30,3 +30,11 @@ body {
 	margin: 0;
 	line-height: 1.5;
 }
+
+.hover {
+	transition-duration: 1s;
+	
+	& :hover {
+		transform: rotate(8deg);
+	}
+}

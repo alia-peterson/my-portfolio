@@ -16,6 +16,10 @@ export const links: LinksFunction = () => [
 	{ rel: 'stylesheet', href: appStylesHref },
 ];
 
+export const meta = () => {
+	return [{ title: 'Alia Peterson Portfolio' }];
+};
+
 export default function App() {
 	return (
 		<html lang="en">
@@ -25,18 +29,30 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body className="bg-gray-700 text-white text-2xl">
-				<h1 className="text-4xl py-3 text-center">Portfolio</h1>
-				<nav>
-					<ul className="bg-gray-900 flex flex-row justify-evenly py-4">
-						<li>
-							<NavLink to="/">Home</NavLink>
-						</li>
-						<li>
-							<NavLink to="/contact">Contact</NavLink>
-						</li>
-					</ul>
-				</nav>
+			<body className="text-2xl">
+				<header className='shadow-xl'>
+					<div className="flex flex-col items-end p-2">
+						<button className="hover">
+							<img
+								src="images/skull.png"
+								alt="skull"
+								aria-roledescription="toggle theme"
+								className="h-10"
+							/>
+						</button>
+					</div>
+					<h1 className="text-center pb-2 text-4xl">Portfolio</h1>
+					<nav className='border-2 border-y-black'>
+						<ul className="flex flex-row justify-evenly py-4">
+							<li>
+								<NavLink to="/">Home</NavLink>
+							</li>
+							<li>
+								<NavLink to="/contact">Contact</NavLink>
+							</li>
+						</ul>
+					</nav>
+				</header>
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
