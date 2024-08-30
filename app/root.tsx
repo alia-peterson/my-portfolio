@@ -30,19 +30,19 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="text-2xl">
-				<header className='shadow-xl'>
+				<header className="shadow-xl bg-white">
 					<div className="flex flex-col items-end p-2">
-						<button className="hover">
+						{/* <button className="hover hover--button">
 							<img
 								src="images/skull.png"
 								alt="skull"
 								aria-roledescription="toggle theme"
 								className="h-10"
 							/>
-						</button>
+						</button> */}
 					</div>
-					<h1 className="text-center pb-2 text-4xl">Portfolio</h1>
-					<nav className='border-2 border-y-black'>
+					<h1 className="text-center pb-2 text-4xl">Alia Peterson Portfolio</h1>
+					<nav className="border-2 border-y-black">
 						<ul className="flex flex-row justify-evenly py-4">
 							<li>
 								<NavLink to="/">Home</NavLink>

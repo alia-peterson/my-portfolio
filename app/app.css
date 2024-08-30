@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,12 +30,70 @@ body {
 	height: 100%;
 	margin: 0;
 	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	font-family: 'Philosopher', sans-serif;
+	position: relative;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	filter: invert(1) brightness(0.5) saturate(0);
+	background-image: url('../public/images/plants_background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+img {
+	filter: invert(1) brightness(0.5);
 }
 
 .hover {
 	transition-duration: 1s;
-	
-	& :hover {
+}
+
+.hover--button {
+	&:hover {
 		transform: rotate(8deg);
 	}
+}
+
+.hover--card {
+	&:hover {
+		color: #7f0414;
+		border-color: #7f0414;
+		-webkit-transform: scale(1.06);
+		-ms-transform: scale(1.06);
+		transform: scale(1.06);
+
+		p {
+			color: #7f0414;
+			font-style: italic;
+		}
+	}
+}
+
+.dark {
+	background-color: black !important;
+	border-color: #1ddcc2 !important;
+	color: #1ddcc2 !important;
+	outline-color: #1ddcc2 !important;
 }
