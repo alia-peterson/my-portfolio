@@ -57,28 +57,6 @@ body::after {
 	z-index: -1;
 }
 
-/* img {
+img {
 	filter: invert(1) brightness(0.5);
-} */
-
-/* 
-.hover {
-	transition-duration: 0.5s;
 }
-
-.hover--button {
-	&:hover {
-		transform: rotate(8deg);
-	}
-}
-
-.hover--card {
-	&:hover {
-		color: #7f0414;
-		border-color: #7f0414;
-		-webkit-transform: scale(1.06);
-		-ms-transform: scale(1.06);
-		transform: scale(1.06);
-		font-style: italic;
-	}
-} */

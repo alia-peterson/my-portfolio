@@ -1,7 +1,17 @@
+import { useOutletContext } from '@remix-run/react';
+import classNames from 'classnames';
+
 export default function Home() {
+	const { darkMode } = useOutletContext<{ darkMode: boolean }>();
+
 	return (
 		<div className="w-full h-5/6 flex justify-center items-center">
-			<article className="bg-black text-teal-400 shadow-card border-2 border-teal-400 rounded-xl w-128 p-4">
+			<article
+				className={classNames(
+					'bg-white text-red-900 shadow-card border-2 border-red-900 rounded-xl w-large p-4',
+					{ 'shadow-white': darkMode }
+				)}
+			>
 				Alia has found her passion in web development and loves to learn new
 				technologies and best practices while solving complex problems. Her
 				experience in designing and implementing scalable software architecture,
