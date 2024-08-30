@@ -83,11 +83,7 @@ img {
 		-webkit-transform: scale(1.06);
 		-ms-transform: scale(1.06);
 		transform: scale(1.06);
-
-		p {
-			color: #7f0414;
-			font-style: italic;
-		}
+		font-style: italic;
 	}
 }
 
