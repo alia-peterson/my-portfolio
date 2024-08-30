@@ -11,6 +11,8 @@ import {
 import type { LinksFunction } from '@remix-run/server-runtime';
 
 import appStylesHref from './app.css';
+import { useState } from 'react';
+import classNames from 'classnames';
 
 export const links: LinksFunction = () => [
 	{ rel: 'stylesheet', href: appStylesHref },
@@ -21,6 +23,8 @@ export const meta = () => {
 };
 
 export default function App() {
+	const [lightMode, setLightMode] = useState(false);
+
 	return (
 		<html lang="en">
 			<head>
@@ -29,20 +33,26 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body className="text-2xl">
-				<header className="shadow-xl bg-white">
+			<body
+				className={classNames('text-2xl', {
+					'invert brightness-50': lightMode,
+				})}
+			>
+				<header className="shadow-xl bg-black text-teal-400">
 					<div className="flex flex-col items-end p-2">
-						{/* <button className="hover hover--button">
+						{/** hover hover--button */}
+						{/* <button className="">
 							<img
 								src="images/skull.png"
 								alt="skull"
 								aria-roledescription="toggle theme"
-								className="h-10"
+								className={classNames('h-10', { 'rotate-180': lightMode })}
+								onClick={() => setLightMode((prev) => !prev)}
 							/>
 						</button> */}
 					</div>
 					<h1 className="text-center pb-2 text-4xl">Alia Peterson Portfolio</h1>
-					<nav className="border-2 border-y-black">
+					<nav className="border-y-2 border-y-teal-400">
 						<ul className="flex flex-row justify-evenly py-4">
 							<li>
 								<NavLink to="/">Home</NavLink>

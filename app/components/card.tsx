@@ -13,10 +13,14 @@ export default function Card({
 	height = 150,
 	width = 150,
 }: ICardProps) {
-	// outline-double outline-offset-8 p-4
+	// hover hover--card
 	return (
 		<a href={linkUrl} target="_blank">
-			<article className="hover hover--card bg-white rounded-xl flex flex-col items-center p-4 min-h-80 w-64">
+			<article
+				className={
+					'rounded-xl text-teal-400 bg-black flex flex-col justify-between items-center p-4 m-4 min-h-80 w-64 border-8 border-double border-teal-400 shadow-card'
+				}
+			>
 				<img src="/images/moons.png" height={15} width={70} />
 				<img src={`/images/${imgName}.png`} height={height} width={width} />
 				<p>{name}</p>

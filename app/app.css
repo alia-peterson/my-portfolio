@@ -6,6 +6,7 @@
 html {
 	box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -13,16 +14,11 @@ html {
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+	font-family: 'Philosopher', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
 }
 
 html,
@@ -32,7 +28,6 @@ body {
 	line-height: 1.5;
 	padding: 0;
 	margin: 0;
-	font-family: 'Philosopher', sans-serif;
 	position: relative;
 }
 
@@ -62,12 +57,13 @@ body::after {
 	z-index: -1;
 }
 
-img {
+/* img {
 	filter: invert(1) brightness(0.5);
-}
+} */
 
+/* 
 .hover {
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 }
 
 .hover--button {
@@ -85,11 +81,4 @@ img {
 		transform: scale(1.06);
 		font-style: italic;
 	}
-}
-
-.dark {
-	background-color: black !important;
-	border-color: #1ddcc2 !important;
-	color: #1ddcc2 !important;
-	outline-color: #1ddcc2 !important;
-}
+} */
