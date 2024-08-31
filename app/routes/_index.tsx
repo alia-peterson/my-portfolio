@@ -5,7 +5,7 @@ export default function Home() {
 	const { darkMode } = useOutletContext<{ darkMode: boolean }>();
 
 	return (
-		<div className="w-full h-5/6 flex justify-center items-center">
+		<div className="w-full h-5/6 px-4 flex justify-center items-center">
 			<article
 				className={classNames(
 					'bg-white text-red-900 shadow-card border-2 border-red-900 rounded-xl w-large p-4 text-justify',
