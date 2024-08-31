@@ -35,37 +35,41 @@ export default function App() {
 			<body
 				className={classNames('text-2xl font-semibold', { invert: darkMode })}
 			>
-				<header
-					className={classNames('shadow-lg bg-white text-red-900', {
-						'shadow-white': darkMode,
-					})}
-				>
-					<div className="flex flex-col items-end p-2">
-						<button className="duration-500 hover:rotate-12">
-							<img
-								src="images/skull.png"
-								alt="skull"
-								aria-roledescription="toggle theme"
-								className={classNames('h-10', {
-									'rotate-180 animation-half duration-1000': darkMode,
-								})}
-								onClick={() => setDarkMode((prev) => !prev)}
-							/>
-						</button>
-					</div>
-					<h1 className="text-center pb-2 text-4xl">Alia Peterson Portfolio</h1>
-					<nav className="border-y-2 border-y-red-900">
-						<ul className="flex flex-row justify-evenly py-4">
-							<li>
-								<NavLink to="/">Home</NavLink>
-							</li>
-							<li>
-								<NavLink to="/contact">Contact</NavLink>
-							</li>
-						</ul>
-					</nav>
-				</header>
-				<Outlet context={{ darkMode }} />
+				<main className="flex flex-col h-screen items-center">
+					<header
+						className={classNames('shadow-lg bg-white text-red-900 w-screen', {
+							'shadow-white': darkMode,
+						})}
+					>
+						<div className="flex flex-col items-end p-2">
+							<button className="duration-500 hover:rotate-12">
+								<img
+									src="images/skull.png"
+									alt="skull"
+									aria-roledescription="toggle theme"
+									className={classNames('h-10', {
+										'rotate-180 animation-half duration-1000': darkMode,
+									})}
+									onClick={() => setDarkMode((prev) => !prev)}
+								/>
+							</button>
+						</div>
+						<h1 className="text-center pb-2 text-4xl">
+							Alia Peterson Portfolio
+						</h1>
+						<nav className="border-y-2 border-y-red-900">
+							<ul className="flex flex-row justify-evenly py-4">
+								<li>
+									<NavLink to="/">Home</NavLink>
+								</li>
+								<li>
+									<NavLink to="/contact">Contact</NavLink>
+								</li>
+							</ul>
+						</nav>
+					</header>
+					<Outlet context={{ darkMode }} />
+				</main>
 				<Scripts />
 				<LiveReload />
 			</body>

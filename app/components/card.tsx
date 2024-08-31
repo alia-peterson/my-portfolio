@@ -22,7 +22,7 @@ export default function Card({
 		<a href={linkUrl} target="_blank">
 			<article
 				className={classNames(
-					`p-4 m-4 min-h-80 w-64 rounded-xl text-red-900 bg-white 
+					`p-4 min-h-80 w-64 rounded-xl text-red-900 bg-white 
 					flex flex-col justify-between items-center 
 					border-8 border-double border-red-900 shadow-card
 					duration-1000 hover:scale-105`,
